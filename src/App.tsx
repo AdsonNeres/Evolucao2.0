@@ -671,7 +671,7 @@ function App() {
                     </div>
                     <div>
                       <label className="block text-sm font-bold text-gray-700 mb-1">
-                        Entregues
+                        Coleta Sucesso
                       </label>
                       <div className="p-2 bg-gray-50 rounded text-center font-bold">
                         {regionSummaries.DAFITI.entregues}
@@ -679,7 +679,7 @@ function App() {
                     </div>
                     <div>
                       <label className="block text-sm font-bold text-gray-700 mb-1">
-                        Insucessos
+                        Coleta Insucesso
                       </label>
                       <div className="p-2 bg-gray-50 rounded text-center font-bold">
                         {regionSummaries.DAFITI.insucessos}
@@ -687,7 +687,7 @@ function App() {
                     </div>
                     <div>
                       <label className="block text-sm font-bold text-gray-700 mb-1">
-                        % Entregas
+                        % Coletas
                       </label>
                       <div className={`${getPercentageStyle(regionSummaries.DAFITI.percentualEntregas, 'entregas')} font-bold`}>
                         {regionSummaries.DAFITI.percentualEntregas.toFixed(2)}%
@@ -747,7 +747,7 @@ function App() {
                 )}
                 <div>
                   <label className="block text-sm font-bold text-gray-700 mb-1">
-                    Entregues
+                    Entregues Do Dia
                   </label>
                   <div className="p-2 bg-gray-50 rounded text-center font-bold">
                     {summary.entregues}
@@ -755,7 +755,7 @@ function App() {
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-gray-700 mb-1">
-                    Insucessos
+                    Insucessos Do Dia
                   </label>
                   <div className="p-2 bg-gray-50 rounded text-center font-bold">
                     {summary.insucessos}
@@ -763,7 +763,7 @@ function App() {
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-gray-700 mb-1">
-                    % Entregas
+                    % Entregas Do Dia
                   </label>
                   <div className={`${getPercentageStyle(summary.percentualEntregas, 'entregas')} font-bold`}>
                     {summary.percentualEntregas.toFixed(2)}%
