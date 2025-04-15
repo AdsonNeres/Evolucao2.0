@@ -996,7 +996,6 @@ function App() {
               <thead className="bg-[#ed5c0e] text-black">
                 <tr>
                   {[
-                    { key: 'data', label: 'Data' },
                     { key: 'motorista', label: 'Motorista' },
                     { key: 'percentualEntregas', label: '% Entregas' },
                     { key: 'rotas', label: 'Rotas' },
@@ -1028,11 +1027,6 @@ function App() {
               <tbody className="bg-white divide-y divide-gray-600 ">
                 {filteredData.map((item) => (
                   <tr key={item.id} className="font-bold">
-                    <td className="px-4 py-3 whitespace-nowrap text-center border-r border-gray-800" >
-                      <span className={item.data === 'Não Iniciada' ? 'text-red-500 font-semibold' : ''}>
-                        {item.data}
-                      </span>
-                    </td>
                     <td className="px-4 py-3 whitespace-nowrap text-center border-r border-gray-800 ">{item.motorista}</td>
                     <td className={`${getPercentageStyle(item.percentualEntregas, 'entregas')} text-center my-2 border-r border-gray-800`}>
                       {item.percentualEntregas.toFixed(2)}%
