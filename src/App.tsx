@@ -1004,7 +1004,6 @@ function App() {
                     { key: 'pendente', label: 'Pendente' },
                     { key: 'insucessos', label: 'Insucessos' },
                     { key: 'percentualRota', label: '% Rota' },
-                    { key: 'regiao', label: 'Região' },
                     { key: 'actions', label: 'Ações' }
                   ].map(({ key, label }, index, array) => (
                     <th
