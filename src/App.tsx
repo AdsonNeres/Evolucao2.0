@@ -1076,7 +1076,6 @@ function App() {
                     <td className={`${getPercentageStyle(item.percentualRota, 'rotas')} text-center border-r border-gray-800 `}>
                       {item.percentualRota.toFixed(2)}%
                     </td>
-                    <td className="px-4 py-3 whitespace-nowrap text-center border-r border-gray-800">{item.regiao}</td>
                     <td className="px-4 py-3 whitespace-nowrap ">
                       <div className="flex space-x-2 justify-center">
                         {item.isEditing ? (
